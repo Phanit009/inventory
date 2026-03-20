@@ -1,0 +1,16 @@
+{
+  "name": "ims-api",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate:init": "migrate-mongo init",
+    "migrate:generate": "migrate-mongo create",
+    "migrate:up": "migrate-mongo up",
+    "migrate:down": "migrate-mongo down"
+  },
+  "dependencies": {
+    "migrate-mongo": "^11.0.0"
+  }
+}
